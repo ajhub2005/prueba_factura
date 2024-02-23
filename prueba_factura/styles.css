@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 200px;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  

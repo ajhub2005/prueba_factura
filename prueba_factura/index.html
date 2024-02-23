@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facturación</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h2>Facturación</h2>
+
+<form id="facturaForm">
+  <label for="codigoCliente">Código del cliente:</label>
+  <input type="text" id="codigoCliente" name="codigoCliente" required><br><br>
+  
+  <label for="codigoAsesor">Código de Asesor:</label>
+  <input type="text" id="codigoAsesor" name="codigoAsesor" required><br><br>
+  
+  <label for="formaPago">Forma de pago:</label>
+  <select id="formaPago" name="formaPago">
+    <option value="efectivo">Efectivo</option>
+    <option value="tarjeta">Tarjeta de crédito</option>
+    <option value="transferencia">Transferencia bancaria</option>
+  </select><br><br>
+  
+  <label for="codigoProducto">Código del producto:</label>
+  <input type="text" id="codigoProducto" name="codigoProducto" required><br><br>
+  
+  <label for="descripcionProducto">Descripción del producto:</label>
+  <input type="text" id="descripcionProducto" name="descripcionProducto" required><br><br>
+  
+  <label for="cantidad">Cantidad:</label>
+  <input type="number" id="cantidad" name="cantidad" required><br><br>
+  
+  <label for="precio">Precio:</label>
+  <input type="number" id="precio" name="precio" required><br><br>
+  
+  <button type="button" id="agregarProducto">Agregar Producto</button>
+</form>
+
+<h2>Productos Agregados</h2>
+<table id="productosAgregados">
+  <thead>
+    <tr>
+      <th>Código Producto</th>
+      <th>Descripción</th>
+      <th>Cantidad</th>
+      <th>Precio</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Aquí se mostrarán los productos agregados dinámicamente -->
+  </tbody>
+</table>
+
+<h2>Resumen de Factura</h2>
+<p id="resumenFactura"></p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="factura.js"></script>
+</body>
+</html>
